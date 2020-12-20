@@ -15,7 +15,7 @@
   <meta name="twitter:url" content="{{ page.url | absolute_url }}">
   <meta name="twitter:title" content="{{ page.title | escape }}">
   <meta name="twitter:description" content="{{ page.description }}">
-
+  {% raw %}
   {% if page.thumb_image %}
     {% if page.thumb_image contains '://' %}
       <meta property="og:image" content="{{ page.thumb_image }}">
@@ -62,5 +62,5 @@
     {% endif %}
 
   {% endif %}
-
+  {% endraw %}
 </head>
